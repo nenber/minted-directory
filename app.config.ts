@@ -73,23 +73,23 @@ export default defineAppConfig({
   },
   header: {
     banner: {
-      show: true,
+      show: false,
       text: "Create your own directory website in minutes.",
       link: "https://minteddirectory.com",
       brandText: "MintedDirectory",
     },
     navbar: {
-      colorModeSelector: true,
-      links: [
-        { name: "Directory", to: "/" },
-        { name: "Blog", to: "/blog" },
-        { name: "Advertise", to: "/advertise" },
-        {
-          name: "Analytics",
-          to: "https://us.posthog.com/shared/7dgSk4cvgNYnJwBu6R47kZXHBUBJWQ",
-          target: "_blank",
-        },
-      ],
+      colorModeSelector: false,
+      links: [{
+        name: "Directory",
+        to: "/",
+      }, {
+        name: "Blog",
+        to: "/blog",
+      }, {
+        name: "Advertise",
+        to: "/advertise",
+      }],
     },
     actionButton: {
       text: "Submit a starter",
