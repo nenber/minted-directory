@@ -75,15 +75,7 @@ const routesRef = computed(() => {
         </DisclosureButton>
       </div>
 
-      <div class="border-t border-gray-200 pb-3 pt-4">
-        <div class="flex items-center px-4">
-          <NuxtLink :to="config?.actionButton?.href"
-            class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-            {{ config?.actionButton?.text }}
-          </NuxtLink>
-          <AppHeaderColorSelector class="relative ml-auto" v-if="config?.navbar?.colorModeSelector" />
-        </div>
-      </div>
+      
     </DisclosurePanel>
   </Disclosure>
 </template>
